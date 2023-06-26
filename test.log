@@ -1,0 +1,26 @@
+[2023-06-27 00:06:51]	[info]	[main.main:11]	hello today is 2020-01-01
+[2023-06-27 00:06:51]	[error]	[main.main:12]	hello today is 2020-01-01, error
+[2023-06-27 00:16:12]	[info]	[main.main:11]	hello today is 2020-01-01
+[2023-06-27 00:16:12]	[error]	[main.main:12]	hello today is 2020-01-01, error
+[2023-06-27 00:18:18]	[info]	[main.main:11]	hello today is 2020-01-01
+[2023-06-27 00:18:18]	[error]	[main.main:12]	hello today is 2020-01-01, error
+[2023-06-27 00:18:39]	[info]	[main.main:11]	hello today is 2020-01-01
+[2023-06-27 00:18:39]	[error]	[main.main:12]	hello today is 2020-01-01, error
+[2023-06-27 00:20:48]	[info]	[main.main:11]	hello today is 2020-01-01
+[2023-06-27 00:20:48]	[error]	[main.main:12]	hello today is 2020-01-01, error
+[2023-06-27 00:24:07]	[info]	[main.main:16]	hello today is 2020-01-01
+[2023-06-27 00:24:07]	[error]	[main.main:17]	hello today is 2020-01-01, error
+[2023-06-27 00:25:30]	[info]	[main.main:16]	hello today is 2020-01-01
+[2023-06-27 00:25:30]	[error]	[main.main:17]	hello today is 2020-01-01, error
+[2023-06-27 00:26:01]	[info]	[main.main:16]	hello today is 2020-01-01
+[2023-06-27 00:26:01]	[error]	[main.main:17]	hello today is 2020-01-01, error
+[2023-06-27 00:26:56]	[info]	[main.main:16]	hello today is 2020-01-01
+[2023-06-27 00:26:56]	[error]	[main.main:17]	hello today is 2020-01-01, error
+[2023-06-27 00:27:22]	[info]	[main.main:16]	hello today is 2020-01-01
+[2023-06-27 00:27:22]	[error]	[main.main:17]	hello today is 2020-01-01, error
+[2023-06-27 00:28:30]	[info]	[main.main:16]	hello today is 2020-01-01
+[2023-06-27 00:28:30]	[error]	[main.main:17]	hello today is 2020-01-01, error
+[2023-06-27 00:28:53]	[info]	[main.main:16]	hello today is 2020-01-01
+[2023-06-27 00:28:53]	[error]	[main.main:17]	hello today is 2020-01-01, error
+[2023-06-27 00:28:55]	[info]	[main.main:16]	hello today is 2020-01-01
+[2023-06-27 00:28:55]	[error]	[main.main:17]	hello today is 2020-01-01, error
