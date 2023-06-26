@@ -24,3 +24,16 @@ func BenchmarkLogrus(b *testing.B) {
 	logrus.Info("hello world")
 	// }
 }
+
+func TestSwitch(t *testing.T) {
+	var c string = "json"
+
+	switch c {
+	case "json":
+		t.Log("json")
+	case "console":
+		t.Log("console")
+	default:
+		t.Log("default")
+	}
+}

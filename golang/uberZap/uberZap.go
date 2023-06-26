@@ -2,6 +2,7 @@ package logger
 
 import (
 	"fmt"
+	"os"
 	"path"
 	"time"
 
@@ -59,7 +60,7 @@ func Init(conf *Conf) {
 	infoPath := path.Join(conf.Path, "info")
 	errPath := path.Join(conf.Path, "error")
 
-	fmt.Println(infoPath, errPath)
+	c = *conf
 	items := []logItem{
 		{
 			FileName: fmt.Sprintf("%s/%s.log", infoPath, "info"),
@@ -69,8 +70,6 @@ func Init(conf *Conf) {
 			Level:    func(l zapcore.Level) bool { return l >= zapcore.WarnLevel },
 		},
 	}
-
-	// fmt.Println(*conf.LogConfig)
 	newLogger(items, conf.LogConfig)
 	return
 }
@@ -82,20 +81,19 @@ func newLogger(items []logItem, conf *LogConfig) {
 	)
 
 	switch c.Encoder {
-	default:
-		cfg = ConsoleConfig()
 	case "json":
 		cfg = JsonConfig()
 	case "console":
 		cfg = ConsoleConfig()
+	default:
+		cfg = ConsoleConfig()
 	}
-
 	// 装配分割器
 	for _, item := range items {
-		fmt.Println(item.FileName)
-		fmt.Println(conf)
 		hook := getLumberJackLogger(conf, item.FileName)
-		core := zapcore.NewCore(cfg, zapcore.AddSync(hook), item.Level)
+		core := zapcore.NewCore(cfg,
+			zapcore.NewMultiWriteSyncer(zapcore.AddSync(hook), zapcore.AddSync(os.Stdout)),
+			item.Level)
 		cores = append(cores, core)
 	}
 
