@@ -15,5 +15,6 @@ func main() {
 	})
 	logger.Info("hello today is 2020-01-01")
 	logger.Error("hello today is 2020-01-01, error")
+	logger.Debug("hello today is 2020-01-01, debug")
 
 }
