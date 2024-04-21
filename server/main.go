@@ -19,7 +19,7 @@ const (
 )
 
 const (
-	apiKey = "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"
+	apiKey = "xxx"
 )
 
 func main() {

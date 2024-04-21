@@ -185,7 +185,7 @@ def segTranscipt(transcript):
     return segedTranscipt
 
 def chat(prompt, text):
-    openai.api_key = "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"
+    # open_api=$ENV
     completions = openai.ChatCompletion.create(
         model = 'gpt-3.5-turbo',
         messages = [
