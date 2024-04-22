@@ -105,7 +105,10 @@ func newLogger(items []logItem, conf *LogConfig) {
 
 }
 
-// 创建日志分割器
+/*
+ 日志分割器
+ 将日志文件切割， 设置大小， 最长保留时间，最多备份， 是否压缩等等
+*/
 
 func getLumberJackLogger(c *LogConfig, fileName string) *lumberjack.Logger {
 	var ljL *lumberjack.Logger
@@ -131,6 +134,7 @@ func getLumberJackLogger(c *LogConfig, fileName string) *lumberjack.Logger {
 	return ljL
 }
 
+// Json 格式的输出配置
 func JsonConfig() zapcore.Encoder {
 	var (
 		cfg = zap.NewProductionEncoderConfig()
@@ -151,6 +155,7 @@ func JsonConfig() zapcore.Encoder {
 	return zapcore.NewJSONEncoder(cfg)
 }
 
+// 终端输出配置
 func ConsoleConfig() zapcore.Encoder {
 	var (
 		cfg = zap.NewProductionEncoderConfig()

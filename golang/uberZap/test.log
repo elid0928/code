@@ -4,3 +4,9 @@
 [2023-06-27 00:02:49]	[info]	[testing.(*B).runN:193]	hello world
 [2023-06-27 00:02:49]	[info]	[testing.(*B).runN:193]	hello world
 [2023-06-27 00:02:49]	[info]	[testing.(*B).runN:193]	hello world
+{"level":"info","ts":"2024-04-21 21:25:45","caller":"testing.(*B).runN:193","msg":"hello world"}
+{"level":"info","ts":"2024-04-21 21:25:45","caller":"testing.(*B).runN:193","msg":"hello world"}
+{"level":"info","ts":"2024-04-21 21:25:45","caller":"testing.(*B).runN:193","msg":"hello world"}
+{"level":"info","ts":"2024-04-21 21:25:45","caller":"testing.(*B).runN:193","msg":"hello world"}
+{"level":"info","ts":"2024-04-21 21:25:45","caller":"testing.(*B).runN:193","msg":"hello world"}
+{"level":"info","ts":"2024-04-21 21:25:45","caller":"testing.(*B).runN:193","msg":"hello world"}
