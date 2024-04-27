@@ -17,7 +17,7 @@
 #### Listeners
 
 #### Storage
-TODO  通过定义接口， 实现后端存储在mysql 和 redis 的能力
+ [√] 通过定义接口， 实现后端存储在mysql 和 redis 的能力 
 
 
 
